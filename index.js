@@ -69,6 +69,7 @@ app.post("/posts", (req, res) => {
 });
 
 //CHALLENGE 4: PATCH a post when you just want to update one parameter
+//we get the data from the body and update the post with the new data
 app.patch("/posts/:id", (req, res) => {
   const post = posts.find((p) => p.id === parseInt(req.params.id));
   if (!post) return res.status(404).json({ message: "Post not found" });

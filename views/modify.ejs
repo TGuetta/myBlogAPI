@@ -23,6 +23,7 @@
           <%= submit %>
         </button>
       </form>
+      <!-- the name attribute of the input fields should be the same as the post object in the index.ejs file -->
       <% } else {%>
         <form id="newPostForm" method="post" action="/api/posts">
           <input type="text" name="title" placeholder="Title" required>
