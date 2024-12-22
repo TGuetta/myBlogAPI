@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 4000;
+const port = 4000; //port 4000 (backend #2 your API responds)
 
 // In-memory data store
 let posts = [

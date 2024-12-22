@@ -2,8 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
 
+//we imagine that someone is using my API and building a backend
 const app = express();
-const port = 3000;
+const port = 3000; //port 3000 (backend #1 makes API requests)
 const API_URL = "http://localhost:4000";
 
 app.use(express.static("public"));
